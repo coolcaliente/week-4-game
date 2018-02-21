@@ -5,21 +5,86 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Crystals Collector Game</title>
+    <title>Gem Collector Game</title>
     <!-- Added link to the jQuery Library -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <!-- Added a link to Bootstrap-->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7"
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
         crossorigin="anonymous">
 </head>
 
 <body>
+    <div class="container p-5">
+        <!-- Game Title Section-->
+        <div class="row">
+            <div class="col-12 text-center">
+                <h1 class="display-4">Gem Collector</h1>
+            </div>
+        </div>
+        <!-- End Game Title Section-->
+        <!-- Instruction Section-->
+        <div class="row">
+            <div class="col-12 text-center">
+                <p class="lead">Defeat the Dark Crystal by neutralizing its power! </p>
+                <p class=px-md-5>Use the collective power of the 4 mysterious gems to match the strength of the dark crystal. If Gem Power
+                    overpowers the Dark Crystal, you lose. Happy collecting! </p>
+            </div>
+        </div>
+        <!-- End Instruction Section-->
+        <hr>
+
+
+        <!-- Goal Number Section-->
+        <div class="row">
+            <div class="col text-center">
+                <h2>Dark Crystal</h2>
+                <p id="darkCrystal">#</p>
+            </div>
+            <!-- End Goal Number Section-->
+
+            <!-- Current User Total Section-->
+            <div class="col text-center">
+                <h2>Gem Power</h2>
+                <p id="gemPower">#</p>
+            </div>
+            <!-- End Current User Total Section-->
+        </div>
+        <hr>
+        <!-- Gems Button Section-->
+        <div class="row">
+            <div class="col-sm-6 my-2 col-md-3 text-center" id="gemOne">
+                <button type="button" class="btn btn-outline-primary gem">Gem One </button>
+            </div>
+            <div class="col-sm-6 my-2 col-md-3 text-center" id="gemTwo">
+                <button type="button" class="btn btn-outline-success gem">Gem Two </button>
+            </div>
+            <div class="col-sm-6 my-2 col-md-3 text-center" id="gemThree">
+                <button type="button" class="btn btn-outline-danger gem">Gem Three </button>
+            </div>
+            <div class="col-sm-6 my-2 col-md-3 text-center" id="gemFour">
+                <button type="button" class="btn btn-outline-warning gem">Gem Four </button>
+            </div>
+        </div>
+        <!-- End Gems Button Section-->
+        <hr>
+        <!-- Counter Section-->
+        <div class="row">
+            <div class="col-6 text-center">
+                <h4>Wins</h4>
+                <p id="winCount">#</p>
+            </div>
+            <div class="col-6 text-center">
+                <h4>Loses</h4>
+                <p id="lossCount">#</p>
+            </div>
+        </div>
+        <!-- End Counter Section-->
+    </div>
 
 
 
 
-
-    <script src="./assets/javascript/javascript.js"></script>
+    <script type="text/javascript" src="./assets/javascript/javascript.js"></script>
 </body>
 
 </html>
